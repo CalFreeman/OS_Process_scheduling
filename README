@@ -1,0 +1,30 @@
+Caleb Freeman
+CS4760 - Operating Systems
+Instructor: Dr. Hauschild
+Assignment #4 - Process Scheduling
+
+1-CONTENTS
+----------
+oss.c           - source code
+user.c          - child processes source code
+.git/           - git Repository
+Makefile        - makefile
+README          - this file
+
+2-COMMAND LINE ARGUMENTS
+----------
+Usage: ./oss [-h] [-s x] [-l [filename]] [-t z]
+-h,   --help                    Print a help message and exit.
+-s x, --child processes         where x is the maximum number of child processes spawned.
+-l,   --log file                -l [filename] log file used.
+-t z, --termination             -t z, parameter z is the time in real seconds when the master will
+                                terminate itself and all children.
+default settings: -l output.dat
+
+3-CODE COMPILATION:
+---------
+In my computer I am able to run the make file an execute with ./logParse
+example:
+>make
+>./oss -s 4 -t 6 -l [dirname.dat]
+
